@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="UserTable" max_length="40" name="x_58872_needit_usertable" type="collection">
+        <element choice="1" label="email" max_length="40" name="email" type="choice">
+            <choice/>
+        </element>
+        <element label="manager" max_length="32" name="manager" reference="x_58872_needit_usertable" type="reference"/>
+        <element choice="1" label="notifications" max_length="40" name="notifications" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="username" max_length="40" name="username" type="string"/>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+    </element>
+</database>

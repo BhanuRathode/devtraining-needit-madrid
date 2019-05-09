@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="NeedItRequest" max_length="40" name="x_58872_needit_needitrequest" type="collection">
+        <element label="description" max_length="40" name="description" type="string"/>
+        <element display="true" label="number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="priority" max_length="40" name="priority" type="choice">
+            <choice/>
+        </element>
+        <element label="requestedfor" max_length="32" name="requestedfor" reference="x_58872_needit_usertable" type="reference"/>
+        <element label="Shortdescription" max_length="40" name="shortdescription" type="string"/>
+        <element choice="1" label="state" max_length="40" name="state" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="what needed" max_length="40" name="what_needed" type="choice">
+            <choice/>
+        </element>
+        <element label="when needed" max_length="40" name="when_needed" type="glide_date_time"/>
+        <index name="index">
+            <element name="requestedfor"/>
+        </index>
+    </element>
+</database>

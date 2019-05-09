@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="NeedItTasks" max_length="40" name="x_58872_needit_needittasks" type="collection">
+        <element label="Additional" max_length="40" name="additional" type="string"/>
+        <element label="AssignedTo" max_length="32" name="assignedto" reference="x_58872_needit_usertable" type="reference"/>
+        <element label="number" max_length="40" name="number" type="string"/>
+        <element label="parent" max_length="32" name="parent" reference="x_58872_needit_needitrequest" type="reference"/>
+        <element choice="1" label="priority" max_length="40" name="priority" type="choice">
+            <choice/>
+        </element>
+        <element label="shortdescription" max_length="40" name="shortdescription" type="string"/>
+        <element label="state" max_length="40" name="state" type="string"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+        <index name="index2">
+            <element name="assignedto"/>
+        </index>
+    </element>
+</database>
